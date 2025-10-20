@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transportation Booking</title>
+  <link rel="stylesheet" href="style/css/style.css" />
+
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Transportation Booking</h1>
+
+    <!-- Booking Form -->
+    <section class="form-container">
+      <div class="form-grid">
+        <div class="field">
+          <label for="transport-mode">Transport mode</label>
+          <select id="transport-mode">
+            <option value="" disabled selected>Choose…</option>
+            <option>Bus</option>
+            <option>Tram</option>
+            <option>Metro</option>
+            <option>Shuttle</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="departure-time">Departure time slot</label>
+          <select id="departure-time">
+            <option value="" disabled selected>Choose…</option>
+            <option>06:00–09:00</option>
+            <option>09:00–12:00</option>
+            <option>12:00–15:00</option>
+            <option>15:00–18:00</option>
+            <option>18:00–21:00</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="passenger-name">Full name</label>
+          <input id="passenger-name" type="text" placeholder="e.g., Jack Sparrow" />
+        </div>
+
+        <div class="field">
+          <label for="passenger-email">Email</label>
+          <input id="passenger-email" type="email" placeholder="name@example.com" />
+        </div>
+
+        <div class="field">
+          <label for="passenger-phone">Phone number</label>
+          <input id="passenger-phone" type="tel" placeholder="+359 88 123 4567" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="book-btn" class="btn primary" type="button">Book Transport</button>
+      </div>
+    </section>
+
+    <!-- Preview -->
+    <section id="preview" class="card" style="display:none">
+      <h2>Preview your booking</h2>
+      <ul class="kv">
+        <li><span>Mode:</span> <strong id="preview-transport-mode"></strong></li>
+        <li><span>Departure:</span> <strong id="preview-departure-time"></strong></li>
+        <li><span>Name:</span> <strong id="preview-passenger-name"></strong></li>
+        <li><span>Email:</span> <strong id="preview-passenger-email"></strong></li>
+        <li><span>Phone:</span> <strong id="preview-passenger-phone"></strong></li>
+      </ul>
+      <div class="actions">
+        <button id="edit-btn" class="btn" type="button">Edit</button>
+        <button id="confirm-btn" class="btn success" type="button">Confirm</button>
+      </div>
+    </section>
+
+    <!-- Confirmation -->
+    <section id="confirmation" class="card" style="display:none">
+      <h2>Booking Confirmed 🎉</h2>
+      <p class="muted">Your transportation booking has been recorded.</p>
+      <div class="actions">
+        <button id="back-btn" class="btn" type="button">Book Another</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
