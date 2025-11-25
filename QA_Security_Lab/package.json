@@ -1,0 +1,14 @@
+{
+  "name": "qa-security-lab",
+  "version": "1.0.0",
+  "description": "Deliberately-insecure Node/Express app for QA security practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2"
+  }
+}
