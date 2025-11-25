@@ -1,0 +1,12 @@
+Run the app:
+npm install
+npm start # or: node app.js
+# open http://localhost:3000
+
+. Credentials
+Admin account
+•	Username: admin
+•	Password: admin123
+Normal user account
+•	Username: user
+•	Password: test
